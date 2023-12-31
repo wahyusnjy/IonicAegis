@@ -1,0 +1,7 @@
+{
+  "name": "Aegis",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
