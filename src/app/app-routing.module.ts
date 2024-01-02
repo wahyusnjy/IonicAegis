@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  }, 
+  {
+    path: 'dashboard-jammer',
+    loadChildren: () => import('./dashboard-jammer/dashboard-jammer.module').then( m => m.DashboardJammerPageModule)
+  },
 ];
 
 @NgModule({
