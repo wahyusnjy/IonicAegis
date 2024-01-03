@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'dashboard-jammer',
     loadChildren: () => import('./dashboard-jammer/dashboard-jammer.module').then( m => m.DashboardJammerPageModule)
   },
+  {
+    path: 'log-history',
+    loadChildren: () => import('./log-history/log-history.module').then( m => m.LogHistoryPageModule)
+  },
 ];
 
 @NgModule({

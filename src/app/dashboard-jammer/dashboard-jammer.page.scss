@@ -312,3 +312,288 @@ input:checked ~ .checkbox-vcwa {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  backdrop-filter: blur(6px);
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background: url('/assets/component/border-modal.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: auto;
+  padding: 20px;
+  width: 1721.55px;
+  height: 1235px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-title {
+  text-align:center;
+  color: #D9D9D9;
+  font-feature-settings: 'cv11' on, 'cv01' on, 'ss01' on;
+  font-size: 38px;
+  margin-bottom:20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 36.513px;
+}
+
+
+  .btn-grup {
+    background: url('/assets/component/btn-group-modal.svg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 420px;
+    height: 900px;
+    flex-shrink: 0;
+    margin-left:50px;
+  }
+
+  .the-btn {
+    width: 420px;
+    height: 150px;
+    background-color: transparent;
+  }
+
+  .btn-title {
+    color: #FFF;    
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21.362px; /* 122.94% */
+    letter-spacing: 2.003px;
+    text-transform: uppercase;
+  }
+
+  .btn-signal {
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15.507px; /* 122.94% */
+    letter-spacing: 1.454px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-bottom: 40px;
+  }
+
+  .active-btn {
+    background: url('/assets/component/modal-ch-active.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .ellipse {
+    display: flex;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    background: url('/assets/component/ellipse-normal.svg');
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+  }
+
+  .border-form {
+    width: 1050px;
+    height: 900px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background: #031123;
+  }
+  .kontener {
+    padding-left: 80px;
+    padding-top: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px; 
+  }
+
+
+  .title-form-left{
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21.362px; /* 122.94% */
+    letter-spacing: 2.003px;
+    text-transform: uppercase;
+    text-align:start;
+  }
+
+  .title-form-right{
+    color: #FFF;
+    font-family: "Inter Milan",sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align:end;
+  }
+
+  .good {
+    width: 70px;
+    height: 40px;
+    flex-shrink: 0;
+    fill: rgba(6, 100, 224, 0.40);
+    stroke-width: 1.493px;
+    stroke: #0A4F9B;
+  }
+
+  .freq-1 {
+    margin-left: 15px;
+    width: 425px;
+    height: 70px;
+    flex-shrink: 0;
+    fill: rgba(10, 79, 155, 0.10);
+    stroke-width: 1.493px;
+    stroke: #0A4F9B;
+    background-color: rgba(10, 79, 155, 0.10);
+    border: 2px solid#0A4F9B;
+  }
+
+  .freq-2 {
+    width: 425px;
+    height: 70px;
+    flex-shrink: 0;
+    fill: rgba(10, 79, 155, 0.10);
+    stroke-width: 1.493px;
+    stroke: #0A4F9B;
+    background-color: rgba(10, 79, 155, 0.10);
+    border: 2px solid#0A4F9B;
+  }
+
+  .center-freq {
+    width: 100%;
+    height: 70px;
+    flex-shrink: 0;
+    fill: rgba(10, 79, 155, 0.10);
+    stroke-width: 1.493px;
+    stroke: #0A4F9B;
+    background-color: rgba(10, 79, 155, 0.10);
+    border: 2px solid#0A4F9B;
+  }
+
+  .border-togle {
+    background: url('/assets/component/border-modal-toggle.svg') center/cover no-repeat;
+    width: 425px;
+    height: 80px;
+  }
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #0077FA;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: #000000;
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .cancel-modal {
+    width: 445px;
+    height: 98px;
+    flex-shrink: 0;
+    margin-top: 50px;
+    background: url('/assets/component/modal-cancel.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+  }
+
+  .save-modal {
+    width: 445px;
+    height: 98px;
+    flex-shrink: 0;
+    margin-top: 50px;
+    background: url('/assets/component/modal-save.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
