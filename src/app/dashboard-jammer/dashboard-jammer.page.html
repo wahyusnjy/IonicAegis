@@ -441,8 +441,7 @@
       <!-- Modal content -->
       <div class="modal-content">
         <h6 class="modal-title">JAMMER 1</h6>
-        <span class="close" class="close" (click)="closeModal('jammer1')">&times;</span>
-          <div class="row">
+          <div class="row" style="margin-top: 40px;">
             <div class="col-4">
               <div class="btn-grup">
                 <button class="the-btn active-btn">
@@ -578,7 +577,7 @@
               </div>
             </div>
             <div class="col-6" style="text-align:end;">
-              <button class="cancel-modal"></button>
+              <button class="cancel-modal" (click)="closeModal('jammer1')"></button>
             </div>
             <div class="col-6">
               <button class="save-modal"></button>
@@ -593,8 +592,8 @@
       <!-- Modal content -->
       <div class="modal-content">
         <h6 class="modal-title">JAMMER 2</h6>
-        <span class="close" class="close" (click)="closeModal('jammer1')">&times;</span>
-          <div class="row">
+        <span class="close" class="close" (click)="closeModal('jammer2')">&times;</span>
+          <div class="row" style="margin-top: 40px;">
             <div class="col-4">
               <div class="btn-grup">
                 <button class="the-btn active-btn">
@@ -730,7 +729,7 @@
               </div>
             </div>
             <div class="col-6" style="text-align:end;">
-              <button class="cancel-modal"></button>
+              <button class="cancel-modal" (click)="closeModal('jammer2')"></button>
             </div>
             <div class="col-6">
               <button class="save-modal"></button>
