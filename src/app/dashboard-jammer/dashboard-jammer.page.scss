@@ -607,3 +607,18 @@ input:checked ~ .checkbox-vcwa {
     background-repeat: no-repeat;
     outline:none;
   }
+
+
+  .vswr-good {
+    padding: 5px;
+    flex-shrink: 0;
+    background-color:rgba(6, 100, 224, 0.40);
+    border:2px solid #0A4F9B ;
+  }
+
+  .vswr-bad {
+    padding: 5px;
+    flex-shrink: 0;
+    background-color:rgba(189, 0, 0, 0.40);
+    border:2px solid #BD0000;;
+  }

@@ -35,66 +35,70 @@ export class DashboardJammerPage implements OnInit {
   ngOnInit() {
     this.getDataJson();
   }
-// Hitung BW Freq Start
-calculateBwFreqStart(jammer: any): string {
-  let bwFreqStart: any = 0;
-  const bw = jammer.bw / 2;
 
-  if (bw > jammer.freq) {
-    bwFreqStart = (bw - jammer.freq) / 1000000;
-  } else if (bw < jammer.freq) {
-    bwFreqStart = (jammer.freq - bw) / 1000000;
-  }
-  return `${bwFreqStart}`;
-}
+// =================================== Hitung Hitungan =====================================
+    // Hitung BW Freq Start
+    calculateBwFreqStart(jammer: any): string {
+      let bwFreqStart: any = 0;
+      const bw = jammer.bw / 2;
 
-// Hitung BW Freq End
-calculateBwFreqEnd(jammer: any): string {
-  let bwFreqEnd: any = 0;
-  const bw = jammer.bw / 2;
+      if (bw > jammer.freq) {
+        bwFreqStart = (bw - jammer.freq) / 1000000;
+      } else if (bw < jammer.freq) {
+        bwFreqStart = (jammer.freq - bw) / 1000000;
+      }
+      return `${bwFreqStart}`;
+    }
 
-  bwFreqEnd = (bw + jammer.freq) / 1000000;
-  return `${bwFreqEnd}`;
-}
+    // Hitung BW Freq End
+    calculateBwFreqEnd(jammer: any): string {
+      let bwFreqEnd: any = 0;
+      const bw = jammer.bw / 2;
 
-//Freq center
-FreqCenter(jammer: any): string{
-  const freq = jammer.freq / 1000000;
-  return `${freq}`;
-}
+      bwFreqEnd = (bw + jammer.freq) / 1000000;
+      return `${bwFreqEnd}`;
+    }
 
-// Freq Span
-FreqSpan(jammer: any): string {
-  const freqSpan = jammer.bw / 1000000;
-  return `${freqSpan}`;
-}
+    //Freq center
+    FreqCenter(jammer: any): string{
+      const freq = jammer.freq / 1000000;
+      return `${freq}`;
+    }
 
-// RFAtt
-RFAtt(jammer:any): string {
-  const RfAtt = jammer.att / 100;
-  return `${RfAtt}`;
-}
+    // Freq Span
+    FreqSpan(jammer: any): string {
+      const freqSpan = jammer.bw / 1000000;
+      return `${freqSpan}`;
+    }
 
-countT(jammer:any): string {
-  const countT = jammer.fs / 1000000;
-  return `${countT}`;
-}
+    // RFAtt
+    RFAtt(jammer:any): string {
+      const RfAtt = jammer.att / 100;
+      return `${RfAtt}`;
+    }
 
-countV(jammer:any): string {
-  const countV = jammer.voltage / 1000;
+    countT(jammer:any): string {
+      const countT = jammer.fs / 1000000;
+      return `${countT}`;
+    }
 
-  return `${countV}`;
-}
+    countV(jammer:any): string {
+      const countV = jammer.voltage / 1000;
 
-countC(jammer:any): string {
-  const countC = jammer.current / 1000;
-  return `${countC}`;
-}
+      return `${countV}`;
+    }
+
+    countC(jammer:any): string {
+      const countC = jammer.current / 1000;
+      return `${countC}`;
+    }
+
+//============================= End Hitung Hitungan ===================================
 
 
 
 
-// Ambil data Json
+//============================= Ambil data Json =======================================
   getDataJson(){
     this.Datajson = dashboardJammer;
     this.Jammer1 = dashboardJammer.jammer1;
@@ -108,11 +112,11 @@ countC(jammer:any): string {
     }
   }
 
-// Hitung - Hitungan
+//============================= End Ambil data Json =======================================
 
 
 
-//Modal Jammer
+//============================= Modal Jammer =============================
   // Select button Group Modal jammer 1
   selectChannelJam1(channelJam1: number) {
     this.selectJam1 = channelJam1;
@@ -121,14 +125,12 @@ countC(jammer:any): string {
 
   // Select button Group Modal jammer 2
   selectChannelJam2(channelJam2: number) {
-    this.channelJam2Tabs.forEach(tab => (tab.isActive = tab.channel === channelJam2));
     this.selectJam2 = channelJam2;
-    console.log('Selected Channel : ', channelJam2);
-    console.log('Selected Channel : ', this.selectJam2);
-
   }
 
-//End Modal Jammer
+//============================= End Modal Jammer =============================
+
+
   redirectToMainDashboard() {
     this.router.navigateByUrl('dashboard');
   }

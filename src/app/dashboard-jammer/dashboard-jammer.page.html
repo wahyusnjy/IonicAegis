@@ -212,7 +212,7 @@
                         </div>
                         <div class="col-6">
                           <h6 class="title-form-right">
-                            VSWR <span class="good">good</span>
+                            VSWR <span class="vswr-good" *ngIf="jam1.vswr === 0">good</span><span class="vswr-bad" *ngIf="jam1.vswr !== 0">Bad</span>
                           </h6>
                         </div>
                         <div class="col-12">
@@ -317,7 +317,7 @@
                       </div>
                       <div class="col-6">
                         <h6 class="title-form-right">
-                          VSWR <span class="good">good</span>
+                          VSWR <span class="vswr-good" *ngIf="jam2.vswr === 0">good</span><span class="vswr-bad" *ngIf="jam2.vswr !== 0">Bad</span>
                         </h6>
                       </div>
                       <div class="col-12">
