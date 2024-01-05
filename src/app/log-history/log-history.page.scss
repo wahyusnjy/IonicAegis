@@ -20,18 +20,18 @@
 }
 
 .spacer {
-  margin-top: 300px;
+  margin-top: 140px;
 }
 
 .spacer-2 {
-  margin-top: 250px;
+  margin-top: 145px;
 }
 
 .dashboard-button{
-  width: 160px;
-  height: 420px;
+  width: 80px;
+  height: 220px;
   flex-shrink: 0;
-  margin-top: 50px;
+  margin-top: 120px;
   background: url('/assets/component/dashboardButton.svg');
   background-size: cover;
   background-position: center center;
@@ -52,8 +52,8 @@
 
 .log-box {
   margin-top: 50px;
-  width: 1680px;
-  height: 750px;
+  width: 800px;
+  height: 400px;
   flex-shrink: 0;
   background: rgba(5, 11, 24, 0.60);
   border-top: 2px solid #0079FF;
@@ -64,11 +64,11 @@
   padding: 50px;
   color: #FFF;
   text-align: justify;
-  font-family: "Inter Milan",sans-serif;
-  font-size: 25px;
+  font-family: "Inter Milan", sans-serif;
+  font-size: 10px;
   font-style: normal;
   font-weight: 500;
-  line-height: 45px; /* 180% */
+  line-height: 25px;
   letter-spacing: 3.75px;
 }
 
@@ -76,7 +76,7 @@
 .my-custom-scrollbar {
   position: relative;
   overflow: auto;
-  height: 550px;
+  height: 300px;
 }
 
 .table-wrapper-scroll-y {
@@ -84,10 +84,10 @@ display: block;
 }
 
 .export-log {
-  width: 322px;
-  height: 93.668px;
+  width: 204px;
+  height: 60px;
   flex-shrink: 0;
-  margin-top: 50px;
+  margin-top: 0px;
   background: url('/assets/component/exportLog.svg');
   background-size: cover;
   background-position: center center;
