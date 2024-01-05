@@ -38,6 +38,7 @@
   font-weight: 500;
   line-height: 19.701px; /* 150% */
   margin-left: 60px;
+  outline: none;
 }
 
 .border-jammer {
@@ -126,15 +127,17 @@
   background: url('/assets/component/idle.svg');
   background-size: cover;
   background-repeat: no-repeat;
+  outline: none;
 }
 
 .run {
   width: 34px;
-height: 18px;
-margin-top: 15px;
-background: url('/assets/component/run.svg');
-background-size: cover;
-background-repeat: no-repeat;
+  height: 18px;
+  margin-top: 15px;
+  background: url('/assets/component/run.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  outline: none;
 }
 
 .stop {
@@ -144,6 +147,7 @@ background-repeat: no-repeat;
   background: url('/assets/component/stop.svg');
   background-size: cover;
   background-repeat: no-repeat;
+  outline: none;
 }
 
 .border-channel-blue{
@@ -193,6 +197,7 @@ background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  outline: none;
 }
 
 .freqsetjam2 {
@@ -204,6 +209,7 @@ background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  outline: none;
 }
 
 .vswrenable {
@@ -215,6 +221,7 @@ background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  outline: none;
 }
 
 .vswrdisable {
@@ -226,6 +233,7 @@ background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  outline: none;
 }
 
 .border-vcwa {
@@ -240,8 +248,8 @@ background-repeat: no-repeat;
 }
 
 input[type=checkbox] {
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 14px;
   flex-shrink: 0;
 }
 
@@ -283,6 +291,7 @@ input:checked ~ .checkbox-vcwa {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  outline:none;
 }
 
 .btn-startAll {
@@ -293,6 +302,7 @@ input:checked ~ .checkbox-vcwa {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  outline:none;
 }
 
 
@@ -305,6 +315,7 @@ input:checked ~ .checkbox-vcwa {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  outline:none;
 }
 
 
@@ -371,6 +382,7 @@ input:checked ~ .checkbox-vcwa {
     height: 440px;
     flex-shrink: 0;
     margin-left:50px;
+    outline:none;
   }
 
   .the-btn {
@@ -406,6 +418,7 @@ input:checked ~ .checkbox-vcwa {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    outline:none;
   }
 
   .ellipse {
@@ -578,7 +591,7 @@ input:checked ~ .checkbox-vcwa {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-
+    outline:none;
   }
 
   .save-modal {
@@ -590,4 +603,5 @@ input:checked ~ .checkbox-vcwa {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    outline:none;
   }

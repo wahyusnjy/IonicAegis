@@ -51,13 +51,11 @@
   margin-right: 40px;
   padding:20px;
   width:90%;
-  height:100%;
 
 }
 
 .box-left{
   width: 100%;
-  height: 100%;
 }
 
 
@@ -85,7 +83,6 @@
 
 .box-right{
   width: 100%; /* Sesuaikan lebar sesuai kebutuhan Anda */
-  height: 100%; /* Sesuaikan tinggi sesuai kebutuhan Anda */
 }
 
 
@@ -117,6 +114,7 @@
   background: url('/assets/component/button-biru.svg');
   background-size: cover;
   margin-left: 60px;
+  outline: none;
 }
 
 .status-scan {
@@ -129,7 +127,7 @@
     width: auto;
     margin-left: 175px;
     background: url('/assets/component/scanInProgress.svg');
-    background-size: contain; 
+    background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -140,6 +138,7 @@
   margin-left: 55px;
   background: url('/assets/component/stopscandash.svg');
   background-size: cover;
+  outline: none;
 }
 
 
@@ -174,6 +173,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  outline: none;
 }
 
 .border-qj-cell {
@@ -183,6 +183,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  outline: none;
 }
 
 .border-qj-wifi {
@@ -192,6 +193,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  outline: none;
 }
 
 .border-qj-all {
@@ -201,6 +203,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  outline: none;
 }
 
 .active {
@@ -210,6 +213,7 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  outline: none;
 }
 
 
