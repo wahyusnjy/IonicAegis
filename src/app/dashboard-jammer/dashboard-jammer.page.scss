@@ -355,7 +355,7 @@ input:checked ~ .checkbox-vcwa {
   color: #D9D9D9;
   font-feature-settings: 'cv11' on, 'cv01' on, 'ss01' on;
   font-size: 20px;
-  // margin-bottom:20px;
+  margin-top: 5px;
   font-style: normal;
   font-weight: 800;
   line-height: 36.513px;
@@ -368,20 +368,20 @@ input:checked ~ .checkbox-vcwa {
     flex-direction: column;
     align-items: center;
     width: 200px;
-    height: 500px;
+    height: 440px;
     flex-shrink: 0;
     margin-left:50px;
   }
 
   .the-btn {
     width: 200px;
-    height: 80px;
+    height: 72px;
     background-color: transparent;
   }
 
   .btn-title {
     color: #FFF;
-    font-size: 20px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 700;
     line-height: 21.362px; /* 122.94% */
@@ -391,7 +391,7 @@ input:checked ~ .checkbox-vcwa {
 
   .btn-signal {
     color: #FFF;
-    font-size: 14px;
+    font-size: 8px;
     font-style: normal;
     font-weight: 500;
     line-height: 15.507px; /* 122.94% */
@@ -417,29 +417,29 @@ input:checked ~ .checkbox-vcwa {
     background-size:cover;
     background-position: center center;
     background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     flex-shrink: 0;
   }
 
   .border-form {
     width: 550px;
-    height: 500px;
+    height: 460px;
     flex-shrink: 0;
     border-radius: 11px;
     background: #031123;
   }
   .kontener {
-    padding-left: 80px;
-    padding-top: 60px;
-    padding-right: 60px;
-    padding-bottom: 60px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 30px
   }
 
 
   .title-form-left{
     color: #FFF;
-    font-size: 25px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 700;
     line-height: 21.362px; /* 122.94% */
@@ -469,8 +469,8 @@ input:checked ~ .checkbox-vcwa {
 
   .freq-1 {
     margin-left: 15px;
-    width: 425px;
-    height: 70px;
+    width: 225px;
+    height: 35px;
     flex-shrink: 0;
     fill: rgba(10, 79, 155, 0.10);
     stroke-width: 1.493px;
@@ -480,8 +480,8 @@ input:checked ~ .checkbox-vcwa {
   }
 
   .freq-2 {
-    width: 425px;
-    height: 70px;
+    width: 225px;
+    height: 35px;
     flex-shrink: 0;
     fill: rgba(10, 79, 155, 0.10);
     stroke-width: 1.493px;
@@ -492,7 +492,7 @@ input:checked ~ .checkbox-vcwa {
 
   .center-freq {
     width: 100%;
-    height: 70px;
+    height: 35px;
     flex-shrink: 0;
     fill: rgba(10, 79, 155, 0.10);
     stroke-width: 1.493px;
@@ -503,15 +503,15 @@ input:checked ~ .checkbox-vcwa {
 
   .border-togle {
     background: url('/assets/component/border-modal-toggle.svg') center/cover no-repeat;
-    width: 425px;
-    height: 80px;
+    width: 225px;
+    height: 41px;
   }
 
   .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 50px;
+    height: 24px;
   }
 
   .switch input {
@@ -536,8 +536,8 @@ input:checked ~ .checkbox-vcwa {
   .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 16px;
+    width: 16px;
     left: 4px;
     bottom: 4px;
     background-color: #0077FA;
@@ -570,10 +570,10 @@ input:checked ~ .checkbox-vcwa {
   }
 
   .cancel-modal {
-    width: 445px;
-    height: 98px;
+    width: 225px;
+    height: 48px;
     flex-shrink: 0;
-    margin-top: 50px;
+    margin-top: 15px;
     background: url('/assets/component/modal-cancel.svg');
     background-size: cover;
     background-position: center center;
@@ -582,10 +582,10 @@ input:checked ~ .checkbox-vcwa {
   }
 
   .save-modal {
-    width: 445px;
-    height: 98px;
+    width: 225px;
+    height: 48px;
     flex-shrink: 0;
-    margin-top: 50px;
+    margin-top: 15px;
     background: url('/assets/component/modal-save.svg');
     background-size: cover;
     background-position: center center;
