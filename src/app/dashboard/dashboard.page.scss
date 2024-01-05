@@ -1,13 +1,18 @@
+
+// FONT Lexend Giga
 @font-face {
   font-family: 'Lexend Giga';
   src: url('/assets/Lexend_Giga/static/LexendGiga-Regular.ttf') format('truetype');
 }
 
+
+// FONT INTERMILAN
 @font-face {
   font-family: 'Inter Milan';
   src: url('/assets/Inter/static/Inter-Regular.ttf') format('truetype');
 }
 
+// CSS Background Aegis
 .bg {
   position: absolute;
   top: 0;
@@ -19,29 +24,29 @@
   background-size: cover;
 }
 
-
+// h6 Map
 .title-map {
   color: #FFF;
   text-align: center;
   font-family:"Inter Milan",sans-serif;
-  font-size: 35.692px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 500;
   line-height: 53.538px; /* 150% */
+  margin-bottom: -20px;
 }
 
 
 .spacer {
-  margin-top: 250px;
+  margin-top: 100px;
 }
 
 .box-header-left{
-  padding-top: 50px;
+  padding-top: 20px;
 }
 
 
 .box-body-left{
-  margin-top: 50px;
   margin-left: 20px;
   margin-right: 40px;
   padding:20px;
@@ -58,8 +63,8 @@
 
 
 .map-border {
-  width: 1350px;
-  height: 750px;
+  width: 650px;
+  height: 360px;
   background: url('/assets/component/map-border.svg');
   background-size: cover;
   background-position: center center;
@@ -68,7 +73,7 @@
 
 #map {
   margin-top: 10px;
-  height: 730px;
+  height: 350px;
   border-top-left-radius: 59px;
   border-top-right-radius: 80px;
   position: relative;
@@ -91,7 +96,7 @@
   text-align:center;
   color: #FFF;
   font-family: "Lexend Giga",sans-serif;
-  font-size: 17.946px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   opacity:50%;
@@ -99,17 +104,18 @@
 }
 
 .btn-start-scan{
-  width: 455px;
-  height: 100px;
+  width: 300px;
+  height: 65px;
   flex-shrink: 0;
   color: #FFF;
-  font-feature-settings: 'cv11' on, 'cv01' on, 'ss01' on;
-  font-family:"Inter Milan",sans-serif;
+  font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+  font-family: "Inter Milan", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 36px; /* 150% */
+  line-height: 36px;
   background: url('/assets/component/button-biru.svg');
+  background-size: cover;
   margin-left: 60px;
 }
 
@@ -119,27 +125,27 @@
 }
 
 .proses-scan {
-  width: auto;
-  height: 100px;
-  margin-left: 75px;
-  background: url('/assets/component/scanInProgress.svg');
-  background-position: center center;
-  background-repeat: no-repeat;
+    height: 35px;
+    width: auto;
+    margin-left: 175px;
+    background: url('/assets/component/scanInProgress.svg');
+    background-size: contain; 
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .btn-stop-scan{
-  width: 455px;
-  height: 100px;
-  margin-left: 60px;
+  width: 300px;
+  height: 65px;
+  margin-left: 55px;
   background: url('/assets/component/stopscandash.svg');
+  background-size: cover;
 }
 
 
 .border-jammer {
-  margin-left: 40px;
-  margin-top: 100px;
-  width: 940px;
-  height: 960px;
+  width: 460px;
+  height: 470px;
   background: url('/assets/component/borderJammNow.svg');
   background-size: cover;
   background-position: center center;
@@ -151,20 +157,19 @@
 }
 
 .h6-jamm {
-  margin-top:60px;
   color: #FFF;
   text-align: center;
-  font-family:"Inter Milan",sans-serif;
-  font-size: 35.692px;
+  font-family: "Inter Milan", sans-serif;
+  font-size: 25px;
   font-style: normal;
   font-weight: 500;
-  line-height: 53.538px; /* 150% */
+  line-height: 53.538px;
 }
 
 
 .border-qj-vhf {
-  width: 350px;
-  height: 150px;
+  width: 190px;
+  height: 85px;
   background: url('/assets/component/grey-border-jam.svg');
   background-size: cover;
   background-position: center center;
@@ -172,8 +177,8 @@
 }
 
 .border-qj-cell {
-  width: 350px;
-  height: 150px;
+  width: 190px;
+  height: 85px;
   background: url('/assets/component/grey-border-jam.svg');
   background-size: cover;
   background-position: center center;
@@ -181,8 +186,8 @@
 }
 
 .border-qj-wifi {
-  width: 350px;
-  height: 150px;
+  width: 190px;
+  height: 85px;
   background: url('/assets/component/grey-border-jam.svg');
   background-size: cover;
   background-position: center center;
@@ -190,8 +195,8 @@
 }
 
 .border-qj-all {
-  width: 350px;
-  height: 150px;
+  width: 190px;
+  height: 85px;
   background: url('/assets/component/grey-border-jam.svg');
   background-size: cover;
   background-position: center center;
@@ -199,8 +204,8 @@
 }
 
 .active {
-  width: 350px;
-  height: 150px;
+  width: 190px;
+  height: 85px;
   background: url('/assets/component/blue-border-jam.svg');
   background-size: cover;
   background-position: center center;
@@ -209,11 +214,12 @@
 
 
 .title-border-qj {
+  padding-top: 15px;
   color: #FFF;
   text-align: center;
-  font-feature-settings: 'cv11' on, 'cv01' on, 'ss01' on;
-  font-family: "Inter Milan",sans-serif;
-  font-size: 20.014px;
+  font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+  font-family: "Inter Milan", sans-serif;
+  font-size: 13px;
   font-style: normal;
   font-weight: 500;
   line-height: 30.02px;
@@ -222,7 +228,7 @@
 .sec-border-qj {
   color: #FFF;
   font-family: "Inter Milan",sans-serif;
-  font-size: 10.571px;
+  font-size: 8px;
   font-style: normal;
   font-weight: 500;
   line-height: 12.996px; /* 122.94% */
@@ -231,8 +237,8 @@
 }
 
 .border-jam-option{
-  width: 800px;
-  height: 110px;
+  width: 420px;
+  height: 60px;
   background: url('/assets/component/JammOptionBorder.svg');
   background-size: cover;
   background-position: center center;

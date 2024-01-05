@@ -1,9 +1,4 @@
 @font-face {
-  font-family: 'Lexend Giga';
-  src: url('/assets/Lexend_Giga/static/LexendGiga-Regular.ttf') format('truetype');
-}
-
-@font-face {
   font-family: 'Inter Milan';
   src: url('/assets/Inter/static/Inter-Regular.ttf') format('truetype');
 }
@@ -20,16 +15,16 @@
 }
 
 .spacer {
-  margin-top: 200px;
+  margin-top: 80px;
 }
 
 .spacer-2 {
-  margin-top: 250px;
+  margin-top: 120px;
 }
 
 .btd {
-  width: 300px;
-  height: 51px;
+  width: 200px;
+  height: 44px;
   flex-shrink: 0;
   background: url('/assets/component/backtodashboardbtn.svg');
   background-position: center center;
@@ -46,8 +41,8 @@
 }
 
 .border-jammer {
-  width: 1660px;
-  height: 640px;
+  width: 780px;
+  height: 302px;
   background: url('/assets/component/border-jammer.svg');
   background-size: cover;
   background-position: center center;
@@ -58,30 +53,31 @@
 
 .title-border {
   color: #D9D9D9;
-  font-feature-settings: 'cv11' on, 'cv01' on, 'ss01' on;
-  font-size: 30px;
+  font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+  font-size: 15px;
   font-style: normal;
   font-weight: 800;
   line-height: 36.513px;
   text-align: center;
-  margin-right: 120px;
-  margin-top: 20px
+  margin-right: 50px;
+  margin-top: 0;
 }
 
 .text-connect{
+  font-size: 14px;
   text-align: end;
   white-space: nowrap;
 }
 
 .text-disconect{
+  font-size: 14px;
   text-align: end;
   white-space: nowrap;
 }
 
 .border-channel-grey{
-  width: 480px;
-  height: 225px;
-  margin-top: 20px;
+  width: 220px;
+  height: 104px;
   flex-shrink: 0;
   background: url('/assets/component/ch-border-grey.svg');
   background-size: cover;
@@ -98,61 +94,61 @@
 }
 
 .title-channel {
-  padding: 20px;
+  padding: 10px;
   text-align: start;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 12px;
 }
 
 .title-signal {
   text-align: start;
-  padding-top: 10px;
-  padding-left: 100px;
-  font-size: 20.137px;
+  margin-top: -4px;
+  padding-left: 45px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
 }
 
 .suhu {
-  padding-left: 130px;
-  padding-top: 35px;
+  padding-left: 50px;
+  padding-top: 0px;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 10px;
   font-style: normal;
   white-space: nowrap;
 }
 
 .idle {
-  width:70px;
-  height:30px;
-  margin-left: 95px;
-  margin-top:45px;
+  width:40px;
+  height:16px;
+  margin-left: 25px;
+  margin-top:15px;
   background: url('/assets/component/idle.svg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .run {
-  width:70px;
-  height:30px;
-  margin-top:45px;
-  background: url('/assets/component/run.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 34px;
+height: 18px;
+margin-top: 15px;
+background: url('/assets/component/run.svg');
+background-size: cover;
+background-repeat: no-repeat;
 }
 
 .stop {
-  width:70px;
-  height:30px;
-  margin-top:45px;
+  width: 36px;
+  height: 16px;
+  margin-top: 15px;
   background: url('/assets/component/stop.svg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .border-channel-blue{
-  width: 480px;
-  height: 225px;
+  width: 220px;
+  height: 104px;
   flex-shrink: 0;
   margin-top: 20px;
   background: url('/assets/component/ch-border-blue.svg');
@@ -169,8 +165,8 @@
 }
 
 .border-channel-green{
-  width: 480px;
-  height: 225px;
+  width: 220px;
+  height: 104px;
   flex-shrink: 0;
   margin-top: 20px;
   background: url('/assets/component/ch-border-green.svg');
@@ -189,10 +185,10 @@
 
 
 .freqsetjam1 {
-  width: 450px;
-  height: 130px;
+  width: 220px;
+  height: 65px;
   flex-shrink: 0;
-  margin-top: 20px;
+  margin-top: 10px;
   background: url('/assets/component/freqSetJamm1.svg');
   background-size: cover;
   background-position: center center;
@@ -200,10 +196,10 @@
 }
 
 .freqsetjam2 {
-  width: 450px;
-  height: 130px;
+  width: 220px;
+  height: 65px;
   flex-shrink: 0;
-  margin-top: 20px;
+  margin-top: 10px;
   background: url('/assets/component/freqSetJamm2.svg');
   background-size: cover;
   background-position: center center;
@@ -211,10 +207,10 @@
 }
 
 .vswrenable {
-  width: 450px;
-  height: 130px;
+  width: 220px;
+  height: 65px;
   flex-shrink: 0;
-  margin-top: 20px;
+  margin-top: 10px;
   background: url('/assets/component/vswrenable.svg');
   background-size: cover;
   background-position: center center;
@@ -222,10 +218,10 @@
 }
 
 .vswrdisable {
-  width: 450px;
-  height: 130px;
+  width: 220px;
+  height: 65px;
   flex-shrink: 0;
-  margin-top: 20px;
+  margin-top: 10px;
   background: url('/assets/component/vswrdisable.svg');
   background-size: cover;
   background-position: center center;
@@ -233,8 +229,8 @@
 }
 
 .border-vcwa {
-  width: 445px;
-  height: 350px;
+  width: 220px;
+  height: 175px;
   flex-shrink: 0;
   margin-top: 20px;
   background: url('/assets/component/border-vcwa.svg');
@@ -244,20 +240,20 @@
 }
 
 input[type=checkbox] {
-  width: 28px;
-  height: 28px;
+  width: 18px;
+  height: 18px;
   flex-shrink: 0;
 }
 
 .checkbox-vcwa {
   color: #FFF;
-  font-feature-settings: 'cv11' on, 'cv01' on, 'ss01' on;
-  font-family: "Inter Milan",sans-serif;
-  font-size: 26px;
+  font-feature-settings: "cv11" on, "cv01" on, "ss01" on;
+  font-family: "Inter Milan", sans-serif;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 55.32px;
-  margin-left:20px;
+  margin-left: 20px;
 }
 
 input ~ .checkbox-vcwa {
@@ -280,10 +276,9 @@ input:checked ~ .checkbox-vcwa {
 
 
 .btn-stopAll {
-  width: 445px;
-  height: 98px;
-  flex-shrink: 0;
-  margin-top: 50px;
+  width: 220px;
+  height: 46px;
+  margin-top: 10px;
   background: url('/assets/component/StopAll.svg');
   background-size: cover;
   background-position: center center;
@@ -291,10 +286,9 @@ input:checked ~ .checkbox-vcwa {
 }
 
 .btn-startAll {
-  width: 445px;
-  height: 98px;
-  flex-shrink: 0;
-  margin-top: 50px;
+  width: 220px;
+  height: 46px;
+  margin-top: 10px;
   background: url('/assets/component/startAll.svg');
   background-size: cover;
   background-position: center center;
@@ -303,10 +297,10 @@ input:checked ~ .checkbox-vcwa {
 
 
 .history-button{
-  width: 160px;
-  height: 410px;
+  width: 80px;
+  height: 210px;
   flex-shrink: 0;
-  margin-top: 50px;
+  margin-top: 20px;
   background: url('/assets/component/historyButton.svg');
   background-size: cover;
   background-position: center center;
@@ -336,9 +330,9 @@ input:checked ~ .checkbox-vcwa {
   background-position: center center;
   background-repeat: no-repeat;
   margin: auto;
-  padding: 20px;
-  width: 1721.55px;
-  height: 1235px;
+  // padding: 20px;
+  width: 880px;
+  height: 630px;
 }
 
 /* The Close Button */
@@ -360,8 +354,8 @@ input:checked ~ .checkbox-vcwa {
   text-align:center;
   color: #D9D9D9;
   font-feature-settings: 'cv11' on, 'cv01' on, 'ss01' on;
-  font-size: 38px;
-  margin-bottom:20px;
+  font-size: 20px;
+  // margin-bottom:20px;
   font-style: normal;
   font-weight: 800;
   line-height: 36.513px;
@@ -373,20 +367,20 @@ input:checked ~ .checkbox-vcwa {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 420px;
-    height: 900px;
+    width: 200px;
+    height: 500px;
     flex-shrink: 0;
     margin-left:50px;
   }
 
   .the-btn {
-    width: 420px;
-    height: 150px;
+    width: 200px;
+    height: 80px;
     background-color: transparent;
   }
 
   .btn-title {
-    color: #FFF;    
+    color: #FFF;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -429,8 +423,8 @@ input:checked ~ .checkbox-vcwa {
   }
 
   .border-form {
-    width: 1050px;
-    height: 900px;
+    width: 550px;
+    height: 500px;
     flex-shrink: 0;
     border-radius: 11px;
     background: #031123;
@@ -439,7 +433,7 @@ input:checked ~ .checkbox-vcwa {
     padding-left: 80px;
     padding-top: 60px;
     padding-right: 60px;
-    padding-bottom: 60px; 
+    padding-bottom: 60px;
   }
 
 
@@ -519,13 +513,13 @@ input:checked ~ .checkbox-vcwa {
     width: 60px;
     height: 34px;
   }
-  
-  .switch input { 
+
+  .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
-  
+
 
   .slider {
     position: absolute;
@@ -538,7 +532,7 @@ input:checked ~ .checkbox-vcwa {
     -webkit-transition: .4s;
     transition: .4s;
   }
-  
+
   .slider:before {
     position: absolute;
     content: "";
@@ -550,27 +544,27 @@ input:checked ~ .checkbox-vcwa {
     -webkit-transition: .4s;
     transition: .4s;
   }
-  
+
   input:checked + .slider {
     background-color: #2196F3;
   }
-  
+
   input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
   }
-  
+
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
     background-color: #000000;
   }
-  
+
   /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
   }
-  
+
   .slider.round:before {
     border-radius: 50%;
   }
@@ -584,7 +578,7 @@ input:checked ~ .checkbox-vcwa {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    
+
   }
 
   .save-modal {

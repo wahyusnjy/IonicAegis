@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { GeolocationPosition } from '@capacitor/geolocation';
 import { Geolocation } from '@capacitor/geolocation';
 import * as mapboxgl from 'mapbox-gl';
@@ -12,7 +13,7 @@ export class DashboardPage implements OnInit {
   map!: mapboxgl.Map;
   currentLocation: any = [];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     this.getCurrentLocationAndInitMap();
@@ -132,5 +133,8 @@ export class DashboardPage implements OnInit {
     }
   }
 
+  redirectJammerOption() {
+    this.router.navigateByUrl('dashboard-jammer');
+  }
 
 }

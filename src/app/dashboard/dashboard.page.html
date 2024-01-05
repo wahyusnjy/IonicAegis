@@ -12,7 +12,9 @@
                 <div id="map"></div>
               </div>
               <div class="status-scan">
-                <div class="before-scan"></div>
+                <div style="width: 500px;">
+                  <div class="before-scan"></div>
+                </div>
                 <span class="last-scan">LAST SCAN : 21/2/2023 18:30:21</span>
               </div>
               <div class="btn-scan" style="text-align:center; margin-top:40px">
@@ -35,8 +37,8 @@
                 </h6>
               </div>
               <div class="body-jamnow">
-                <div class="row" style="padding-left:70px;">
-                  <div class="col-6" style="margin-top: 100px;">
+                <div class="row" style="padding-left:20px;">
+                  <div class="col-6" style="margin-top: 40px;">
                     <button class="border-qj-vhf" (click)="vhf()">
                       <p class="title-border-qj">VHF
                         <br>
@@ -49,7 +51,7 @@
                       </p>
                     </button>
                   </div>
-                  <div class="col-6" style="margin-top: 100px;">
+                  <div class="col-6" style="margin-top: 40px;">
                     <button class="border-qj-cell" (click)="cell()">
                       <p class="title-border-qj">CELLULAR
                         <br>
@@ -62,7 +64,7 @@
                       </p>
                     </button>
                   </div>
-                  <div class="col-6" style="margin-top: 140px;">
+                  <div class="col-6" style="margin-top: 20px;">
                     <button class="border-qj-wifi" (click)="wifi()">
                       <p class="title-border-qj">WIFI
                         <br>
@@ -75,7 +77,7 @@
                       </p>
                     </button>
                   </div>
-                  <div class="col-6" style="margin-top: 140px;">
+                  <div class="col-6" style="margin-top: 20px;">
                     <button class="border-qj-all" (click)="all()">
                       <p class="title-border-qj">ALL
                         <br>
@@ -88,8 +90,8 @@
                       </p>
                     </button>
                   </div>
-                  <div class="col-12" style="margin-top: 100px;">
-                    <button class="border-jam-option">
+                  <div class="col-12" style="margin-top: 40px;">
+                    <button class="border-jam-option" (click)="redirectJammerOption()">
                       <p class="title-border-qj">JAMMER OPTION</p>
                     </button>
                   </div>
