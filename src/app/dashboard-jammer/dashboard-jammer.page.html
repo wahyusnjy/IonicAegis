@@ -49,9 +49,31 @@
           </div>
           <div class="row" style="text-align: center;padding-left:20px">
             <div class="col-4" *ngFor="let jam1 of Jammer1">
-              <div class="border-channel-grey">
+              <div class="border-channel-grey" [class.channel-active]="jam1.connected === true" [ngClass]="{'channel-selected': isChannelSelected(jam1)}">
                 <h6 class="title-channel">CHANNEL - {{ jam1.id  }}</h6>
                 <h6 class="title-signal">{{ calculateBwFreqStart(jam1) }}~{{ calculateBwFreqEnd(jam1) }}</h6>
+                <div class="row" *ngIf="jam1.connected === true">
+                  <div class="col-4">
+                    <h6 class="suhu">
+                      41°C
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 29 27" fill="none">
+                        <ellipse cx="14.9128" cy="13.4307" rx="13.9342" ry="13.3009" fill="url(#paint0_linear_2586_29905)"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_2586_29905" x1="14.9128" y1="0.129868" x2="14.9128" y2="26.7316" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#99FFA3"/>
+                        <stop offset="1" stop-color="#68EE76"/>
+                        </linearGradient>
+                        </defs>
+                      </svg>
+                    </h6>
+                  </div>
+                  <div class="col-4">
+                    <button class="idle"></button>
+                  </div>
+                    <div class="col-4">
+                      <button class="run" (click)="runUdp(jam1)"></button>
+                    </div>
+                </div>
               </div>
             </div>
           </div>
@@ -101,10 +123,10 @@
           </div>
           <div class="row" style="text-align: center; padding-left:20px">
             <div class="col-4" *ngFor="let jam2 of Jammer2">
-              <div class="border-channel-grey">
+              <div class="border-channel-grey" [class.channel-active]="jam2.connected === true" [ngClass]="{'channel-selected': isChannelSelected(jam2)}">
                 <h6 class="title-channel">CHANNEL - {{ jam2.id }}</h6>
                 <h6 class="title-signal">{{ calculateBwFreqStart(jam2) }}~{{ calculateBwFreqEnd(jam2) }}</h6>
-                <!-- <div class="row">
+                <div class="row" *ngIf="jam2.connected === true">
                   <div class="col-4">
                     <h6 class="suhu">
                       41°C
@@ -125,7 +147,7 @@
                   <div class="col-4">
                     <button class="run"></button>
                   </div>
-                </div> -->
+                </div>
               </div>
             </div>
           </div>
@@ -149,19 +171,19 @@
             </div>
             <div class="border-vcwa">
               <div style="padding-left: 30px;" class="vhf">
-                <input type="checkbox">
+                <input type="checkbox" [(ngModel)]="vhfChecked" (change)="filtervhf()">
                 <span class="checkbox-vcwa">VHF / UHF</span>
               </div>
               <div style="padding-left:30px; margin-top:-20px;" class="cell">
-                <input type="checkbox">
+                <input type="checkbox" [(ngModel)]="cellularChecked" (change)="filtercellular()">
                 <span class="checkbox-vcwa">CELLULAR</span>
               </div>
               <div style="padding-left:30px; margin-top:-20px;" class="wifi">
-                <input type="checkbox">
+                <input type="checkbox" [(ngModel)]="wifiChecked" (change)="filterwifi()">
                 <span class="checkbox-vcwa">WIFI</span>
               </div>
               <div style="padding-left:30px; margin-top:-20px;" class="all">
-                <input type="checkbox">
+                <input type="checkbox" [(ngModel)]="allChecked" (change)="filterall()">
                 <span class="checkbox-vcwa">ALL</span>
               </div>
             </div>

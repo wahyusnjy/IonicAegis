@@ -94,6 +94,56 @@
   text-transform: uppercase;
 }
 
+.channel-active  {
+  background: url('/assets/component/ch-border-grey-connect.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+/* Add your styles for different channel-selected classes */
+// .channel-selected-vhf {
+//     background: url('/assets/component/ch-border-blue.svg');
+//     background-size: cover;
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//   /* Styles for VHF */
+// }
+
+// .channel-selected-cellular {
+//     background: url('/assets/component/ch-border-blue.svg');
+//     background-size: cover;
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//   /* Styles for Cellular */
+// }
+
+// .channel-selected-wifi {
+//     background: url('/assets/component/ch-border-blue.svg');
+//     background-size: cover;
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//   /* Styles for WiFi */
+// }
+
+// .channel-selected-all {
+//   /* Styles for All */
+// }
+.channel-selected {
+    background: url('/assets/component/ch-border-blue.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.channel-run  {
+  background: url('/assets/component/ch-border-green.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .title-channel {
   padding: 10px;
   text-align: start;
