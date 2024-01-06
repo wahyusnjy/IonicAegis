@@ -60,13 +60,23 @@
 
 
 
+.container {
+  position: relative;
+}
+
 .map-border {
-  width: 650px;
-  height: 360px;
+  position: absolute;
+  top: 190px;
+  left: 30px;
+  right: 0;
+  bottom: 0;
+  width: 670px;
+  height: 370px;  
   background: url('/assets/component/map-border.svg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  z-index: 1; /* Pastikan .map-border berada di atas #map */
 }
 
 #map {
@@ -77,8 +87,9 @@
   position: relative;
   border-bottom-left-radius: 80px;
   border-bottom-right-radius: 69px;
-
+  z-index: 2; /* Pastikan #map berada di atas .map-border */
 }
+
 
 
 .box-right{
